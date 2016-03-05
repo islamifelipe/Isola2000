@@ -18,22 +18,12 @@ import fr.unice.isa.tcf.utils.Database;
  *
  */
 @Stateless(name = "vente-remboursement")
-public class VenteRemboursement implements IVente, IRemboursement {
+public class VenteRemboursement implements IRemboursement {
 
 
-	@EJB Database memory; // composante
+	@EJB Database memory;
 
-//	public Usager getClient() {
-//		return client;
-//	}
-//
-//	public Forfait getForfait() {
-//		return forfait;
-//	}
-//
-//	public int getQuantity() {
-//		return quantite;
-//	}
+
 
 	public Vente getVente(int id) {
 		for (int i=0; i<memory.getVentes().size(); i++){
@@ -42,8 +32,5 @@ public class VenteRemboursement implements IVente, IRemboursement {
 		return null; // si on donne un id qui n'existe pas
 	}
 
-	@Override
-	public Vente validerCommande(Usager usager, Forfait forfait, int quantite) {
-		return null; // TODO
-	}
+	
 }

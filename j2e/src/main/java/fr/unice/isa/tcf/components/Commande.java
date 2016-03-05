@@ -1,6 +1,7 @@
 package fr.unice.isa.tcf.components;
 
 import fr.unice.isa.tcf.entities.Usager;
+import fr.unice.isa.tcf.entities.Vente;
 import fr.unice.isa.tcf.entities.forfaits.Forfait;
 import fr.unice.isa.tcf.interfaces.ICommande;
 
@@ -12,7 +13,7 @@ import javax.ejb.Stateless;
 
 @Stateless(name = "commande")
 public class Commande implements ICommande {
-    private Usager client;
+   /* private Usager client;
     private Forfait forfait;
     private int quantite;
 
@@ -26,6 +27,14 @@ public class Commande implements ICommande {
 
 	public int getQuantity() {
 		return quantite;
+	}*/
+
+	// avec cette methode, on n'a pas besoin des atributes globales 
+	//d'instace "forfait" "client" et "quantite"
+	@Override
+	public Vente validerCommande(Usager usager, Forfait forfait, int quantite) { 
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
