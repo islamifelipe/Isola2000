@@ -43,7 +43,7 @@ public class ClientTest extends AbstractTCFTest {
 		  boolean b1 = client1.cadastrer("FF11", "FELIPE", "FERNANDES", "1111111111"); // true
 		  boolean b2 = client1.cadastrer("FF11", "FELIPE3", "FERNANDES", "11111111113"); // false
 		  assertEquals(1, memory.getAllUsager().size());
-		  assertEquals("FF11", memory.getAllUsager().size());
+		 
 		  assertTrue(b1);
 		  assertFalse(b2);
 		  assertEquals("FELIPE3", memory.getAllUsager().get(0).getPrenom());
