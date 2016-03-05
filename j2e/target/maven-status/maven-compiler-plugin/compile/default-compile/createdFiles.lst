@@ -1,0 +1,8 @@
+fr/unice/isa/tcf/entities/Vente.class
+fr/unice/isa/tcf/utils/Database.class
+fr/unice/isa/tcf/components/VenteRemboursement.class
+fr/unice/isa/tcf/entities/forfaits/Forfait.class
+fr/unice/isa/tcf/entities/Usager.class
+fr/unice/isa/tcf/Hello.class
+fr/unice/isa/tcf/components/CatalogueForfait.class
+fr/unice/isa/tcf/entities/forfaits/Categorie.class
