@@ -1,6 +1,7 @@
 package fr.unice.isa.tcf;
 
 import fr.unice.isa.tcf.components.VenteRemboursement;
+import fr.unice.isa.tcf.interfaces.IVente;
 import fr.unice.isa.tcf.utils.Database;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
@@ -15,7 +16,7 @@ public class VenteRembTest extends AbstractTCFTest{
 
     @EJB private Database memory;
     @EJB(name = "vente-remboursement")
-    VenteRemboursement venteRemboursement;
+    IVente venteRemboursement;
 
 //    @Before
 //    public void setUpContext() throws Exception { memory.flush(); }
