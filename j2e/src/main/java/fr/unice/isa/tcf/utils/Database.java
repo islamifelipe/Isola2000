@@ -25,12 +25,14 @@ public class Database {
 	
 	private Map<Categorie,Set<Forfait>> forfaits = new HashMap<>();// base de forfaits par categories
 	private Set<Forfait> allForfaits = new HashSet<>();// base de tous les forfaits
-	private ArrayList<Vente> ventes = new ArrayList<Vente>();
+	private ArrayList<Vente> allVentes = new ArrayList<Vente>();
 
-
+	public void sortVente(){
+		Collections.sort(allVentes);
+	}
 	public void flushForfaits() { forfaits =  new HashMap<Categorie,Set<Forfait>>();}
 
-	public void flushVentes() { ventes =  new ArrayList<Vente>();}
+	public void flushVentes() { allVentes =  new ArrayList<Vente>();}
 
 	public Map<Categorie,Set<Forfait>> getForfaits() {
 		return forfaits;
@@ -39,7 +41,7 @@ public class Database {
 	public Set<Forfait> flushAllForfaits() { return new HashSet<>(); }
 
 	public ArrayList<Vente> getVentes(){
-		return ventes;
+		return allVentes;
 	}
 
 	public ArrayList<Integer> getArrayInt(){
@@ -48,7 +50,7 @@ public class Database {
 
 
 	public void flush() {
-		ventes = new ArrayList<Vente>();
+		allVentes = new ArrayList<Vente>();
 		forfaits =  new HashMap<Categorie,Set<Forfait>>();
 		allForfaits = new HashSet<>();
 	}

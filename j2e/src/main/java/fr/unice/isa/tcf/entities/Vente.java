@@ -9,7 +9,10 @@ import fr.unice.isa.tcf.entities.forfaits.Forfait;
  * @author islamefelipefernandes
  *
  */
-public abstract class Vente {
+public abstract class Vente implements Comparable<Vente> {
+	/*
+	 * L'interface Comaprable<Vente> est utile pour trier une liste de Vente 
+	 * */
 	
 	protected int id;
 	protected String date;
