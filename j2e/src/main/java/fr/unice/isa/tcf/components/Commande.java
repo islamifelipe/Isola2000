@@ -17,9 +17,6 @@ import java.util.GregorianCalendar;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import fr.unice.isa.tcf.entities.AgenteCaisse;
-/**
- * Created by mitsuko on 29/02/16.
- */
 
 @Stateless(name = "commande")
 public class Commande implements ICommande {
@@ -28,14 +25,14 @@ public class Commande implements ICommande {
 	// avec cette methode, on n'a pas besoin des atributes globales 
 	//d'instace "forfait" "client" et "quantite"
 	@Override
-	public ArrayList<Vente> validerCommandeCaisse(Usager usager, Forfait forfait, int quantite, AgenteCaisse agen) { 
-		/* Les fonctons de validaction de comande suposent que l'usager existe (parce que il a fait deja son login
-		 * En plus, quels sont les condictions pour valider la commande? Est-ce qu'il y a des condictions especiales
-		 * Comme doit être fait le payment?
+	public ArrayList<Vente> validerCommandeCaisse(Usager usager, Forfait forfait, int quantite, AgenteCaisse agent) {
+		/* Les fonctons de validation de commande suppose que l'usager existe (parce que il a fait deja son login
+		 * En plus, quelles sont les conditions pour valider la commande? Est-ce qu'il y a des conditions speciales
+		 * Comment doit être fait le paiement?
 		 * */
 			
 		
-		ArrayList<Vente> retorne  = new ArrayList<Vente> ();
+		ArrayList<Vente> cart  = new ArrayList<Vente> ();
 		memory.sortVente();
 		int id = memory.getVentes().get(memory.getVentes().size()-1).getId();
 		for (int i=0; i<quantite; i++){
@@ -46,18 +43,18 @@ public class Commande implements ICommande {
 			String datahora = date.format(datee);
 
 			
-			Vente v = new VenteCaisse(++id, date.format(datee), heure.format(datee),forfait.getPrix(),  usager, forfait,  agen);
-			retorne.add(v);
+			Vente v = new VenteCaisse(++id, date.format(datee), heure.format(datee),forfait.getPrix(),  usager, forfait,  agent);
+			cart.add(v);
 			memory.getVentes().add(v);
 		}
-		return retorne;
+		return cart;
 	}
 
 	@Override
 	public ArrayList<Vente> validerCommandeSite(Usager usager, Forfait forfait, int quantite) {
 		// idem
 		
-		ArrayList<Vente> retorne  = new ArrayList<Vente> ();
+		ArrayList<Vente> cart  = new ArrayList<Vente> ();
 		memory.sortVente();
 		int id = memory.getVentes().get(memory.getVentes().size()-1).getId();
 		for (int i=0; i<quantite; i++){
@@ -69,10 +66,10 @@ public class Commande implements ICommande {
 
 			
 			Vente v = new VenteSite(++id, date.format(datee), heure.format(datee),forfait.getPrix(),  usager, forfait);
-			retorne.add(v);
+			cart.add(v);
 			memory.getVentes().add(v);
 		}
-		return retorne;
+		return cart;
 	}
 
 
