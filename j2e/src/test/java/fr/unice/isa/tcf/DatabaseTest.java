@@ -43,7 +43,7 @@ public class DatabaseTest extends AbstractTCFTest{
 		 memory.getVentes().add(v6);
 		 memory.sortVente();
 		 for (int i=0; i<5; i++){
-			 System.out.println((memory.getVentes().get(i).getId()));
+			// System.out.println((memory.getVentes().get(i).getId()));
 			 assertTrue((memory.getVentes().get(i).getId() <= memory.getVentes().get(i+1).getId() ));
 			
 		 }

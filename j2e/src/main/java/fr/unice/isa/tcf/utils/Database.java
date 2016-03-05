@@ -11,6 +11,7 @@ import java.util.*;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 
+import fr.unice.isa.tcf.entities.Usager;
 import fr.unice.isa.tcf.entities.Vente;
 import fr.unice.isa.tcf.entities.forfaits.Categorie;
 import fr.unice.isa.tcf.entities.forfaits.Forfait;
@@ -26,6 +27,7 @@ public class Database {
 	private Map<Categorie,Set<Forfait>> forfaits = new HashMap<>();// base de forfaits par categories
 	private Set<Forfait> allForfaits = new HashSet<>();// base de tous les forfaits
 	private ArrayList<Vente> allVentes = new ArrayList<Vente>();
+	private ArrayList<Usager> allUsager = new ArrayList<Usager>(); // base pour tous les clients
 
 	public void sortVente(){
 		Collections.sort(allVentes);
@@ -49,9 +51,13 @@ public class Database {
 	}
 
 
+	public ArrayList<Usager> getAllUsager() {
+		return allUsager;
+	}
 	public void flush() {
 		allVentes = new ArrayList<Vente>();
 		forfaits =  new HashMap<Categorie,Set<Forfait>>();
 		allForfaits = new HashSet<>();
+		allUsager = new ArrayList<Usager>();
 	}
 }
