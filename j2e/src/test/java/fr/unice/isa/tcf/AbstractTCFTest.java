@@ -5,7 +5,18 @@ package fr.unice.isa.tcf;
 //import fr.unice.isa.tcf.entities.Customer;
 //import fr.unice.isa.tcf.exceptions.AlreadyExistingCustomerException;
 import fr.unice.isa.tcf.components.CatalogueForfait;
+import fr.unice.isa.tcf.components.Client;
+import fr.unice.isa.tcf.entities.AgenteCaisse;
+import fr.unice.isa.tcf.entities.Usager;
+import fr.unice.isa.tcf.entities.Vente;
+import fr.unice.isa.tcf.entities.VenteCaisse;
+import fr.unice.isa.tcf.entities.VenteSite;
+import fr.unice.isa.tcf.entities.forfaits.Forfait;
+import fr.unice.isa.tcf.interfaces.IAutentification;
 import fr.unice.isa.tcf.interfaces.ICatalogue;
+import fr.unice.isa.tcf.interfaces.ICommande;
+import fr.unice.isa.tcf.interfaces.IRemboursement;
+import fr.unice.isa.tcf.interfaces.IVente;
 import fr.unice.isa.tcf.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -19,8 +30,19 @@ public abstract class AbstractTCFTest {
 		return ShrinkWrap.create(WebArchive.class)
 				.addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
 				.addPackage(Database.class.getPackage())
-				.addPackage(ICatalogue.class.getPackage());
-//				.addPackage(Customer.class.getPackage())
+				.addPackage(Usager.class.getPackage())
+				.addPackage(VenteCaisse.class.getPackage())
+				.addPackage(VenteSite.class.getPackage())
+				.addPackage(AgenteCaisse.class.getPackage())
+				.addPackage(Forfait.class.getPackage())
+				.addPackage(Vente.class.getPackage())
+				.addPackage(ICatalogue.class.getPackage())
+				.addPackage(IAutentification.class.getPackage())
+				.addPackage(ICommande.class.getPackage())
+				.addPackage(IRemboursement.class.getPackage())
+				.addPackage(IVente.class.getPackage());
+				//.addPackage(Client.class.getPackage())
+				
 //				.addPackage(Cart.class.getPackage())
 //				.addPackage(AlreadyExistingCustomerException.class.getPackage())
 //				.addPackage(CartStateFullBean.class.getPackage());

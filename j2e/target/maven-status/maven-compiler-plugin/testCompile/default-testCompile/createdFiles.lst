@@ -1,3 +1,6 @@
+fr/unice/isa/tcf/ClientTest.class
 fr/unice/isa/tcf/CatalogueForfaitTest.class
+fr/unice/isa/tcf/DatabaseTest.class
 fr/unice/isa/tcf/HelloTest.class
+fr/unice/isa/tcf/AbstractTCFTest.class
 fr/unice/isa/tcf/VenteRembTest.class

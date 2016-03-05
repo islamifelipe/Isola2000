@@ -21,7 +21,7 @@ import static junit.framework.Assert.assertEquals;
 public class CatalogueForfaitTest extends AbstractTCFTest {
 
     @EJB private Database memory;
-    @EJB(name = "catalogue-forfait") CatalogueForfait catalogue;
+    @EJB(name = "catalogue-forfait") private CatalogueForfait catalogue;
 
 
     /**
@@ -29,6 +29,8 @@ public class CatalogueForfaitTest extends AbstractTCFTest {
      */
     @Test
     public void initializeCatalogueTest() {
+    	if (catalogue == null) System.out.println("NULLLLLLLLLLLO");
+    	
         Set<Forfait> myList;
 
 //        myList = new HashSet<>();

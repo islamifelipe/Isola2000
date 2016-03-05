@@ -15,7 +15,7 @@ import fr.unice.isa.tcf.utils.Database;
  * @author islamefelipefernandes
  *
  */
-@Stateless(name = "commande")
+@Stateless(name = "client")
 public class Client implements IAutentification {
 
 	@EJB Database memory;
