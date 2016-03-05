@@ -37,7 +37,8 @@ public class Commande implements ICommande {
 		
 		ArrayList<Vente> retorne  = new ArrayList<Vente> ();
 		memory.sortVente();
-		int id = memory.getVentes().get(memory.getVentes().size()-1).getId();
+		int id = -1;
+		if (memory.getVentes().size()!=0) id= memory.getVentes().get(memory.getVentes().size()-1).getId();
 		for (int i=0; i<quantite; i++){
 			/* *****************  TESTER DATE ET HEURE   ************* */
 			DateFormat date = new SimpleDateFormat("dd/MM/yyyy"); 
@@ -59,7 +60,8 @@ public class Commande implements ICommande {
 		
 		ArrayList<Vente> retorne  = new ArrayList<Vente> ();
 		memory.sortVente();
-		int id = memory.getVentes().get(memory.getVentes().size()-1).getId();
+		int id = -1;
+		if (memory.getVentes().size()!=0) id= memory.getVentes().get(memory.getVentes().size()-1).getId();
 		for (int i=0; i<quantite; i++){
 			/* *****************  TESTER DATE ET HEURE   ************* */
 			DateFormat date = new SimpleDateFormat("dd/MM/yyyy"); 
