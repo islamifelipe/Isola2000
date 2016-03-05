@@ -6,6 +6,7 @@ package fr.unice.isa.tcf;
 //import fr.unice.isa.tcf.exceptions.AlreadyExistingCustomerException;
 import fr.unice.isa.tcf.components.CatalogueForfait;
 import fr.unice.isa.tcf.components.Client;
+import fr.unice.isa.tcf.components.VenteRemboursement;
 import fr.unice.isa.tcf.entities.AgenteCaisse;
 import fr.unice.isa.tcf.entities.Usager;
 import fr.unice.isa.tcf.entities.Vente;
@@ -31,7 +32,7 @@ public abstract class AbstractTCFTest {
 				.addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
 				.addPackage(Database.class.getPackage())
 				.addPackage(CatalogueForfait.class.getPackage())
-				.addPackage(Vente.class.getPackage())
+				.addPackage(VenteRemboursement.class.getPackage())
 				.addPackage(Client.class.getPackage());
 //				.addPackage(Usager.class.getPackage())
 //				.addPackage(VenteCaisse.class.getPackage())
