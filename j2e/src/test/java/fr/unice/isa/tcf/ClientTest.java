@@ -46,7 +46,7 @@ public class ClientTest extends AbstractTCFTest {
 		 
 		  assertTrue(b1);
 		  assertFalse(b2);
-		  assertEquals("FELIPE3", memory.getAllUsager().get(0).getPrenom());
+		  assertEquals("FELIPE", memory.getAllUsager().get(0).getPrenom());
 		  
 	  }
 }
