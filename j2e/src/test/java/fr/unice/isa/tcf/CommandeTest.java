@@ -1,6 +1,5 @@
 package fr.unice.isa.tcf;
 
-import com.sun.prism.Texture;
 import fr.unice.isa.tcf.entities.AgentCaisse;
 import fr.unice.isa.tcf.entities.Usager;
 import fr.unice.isa.tcf.entities.Vente;
@@ -47,7 +46,35 @@ public class CommandeTest extends AbstractTCFTest {
         Assert.assertEquals(myCart.size(), 2);
         Assert.assertEquals(myWebCart.size(), 4);
 
+
     }
 
-    
+    @Test
+    public void commandeClientTest() {
+        ArrayList<Vente> myCart = commande.validerCommandeCaisse(usager, forfait, 2, agentCaisse);
+        ArrayList<Vente> myWebCart = commande.validerCommandeSite(usager, forfait, 4);
+
+        for (Vente v : myCart)
+            Assert.assertEquals(v.getClient(), usager);
+
+        for (Vente v : myWebCart)
+            Assert.assertEquals(v.getClient(), usager);
+    }
+
+    @Test
+    public void commandePrixTest() {
+        ArrayList<Vente> myCart = commande.validerCommandeCaisse(usager, forfait, 2, agentCaisse);
+        ArrayList<Vente> myWebCart = commande.validerCommandeSite(usager, forfait, 4);
+
+        for (Vente v : myCart) {
+            System.out.println(v.getValeur());
+//            Assert.assertEquals(v.getValeur(), 0);
+
+        }
+        for (Vente v : myWebCart) {
+            System.out.println(v.getValeur());
+//            Assert.assertEquals(v.getValeur(), 0);
+        }
+    }
+
 }
