@@ -28,7 +28,15 @@ public class Database {
 	private Set<Forfait> allForfaits = new HashSet<>();// base de tous les forfaits
 	private ArrayList<Vente> allVentes = new ArrayList<Vente>();
 	private ArrayList<Usager> allUsager = new ArrayList<Usager>(); // base pour tous les clients
-
+	private Vente ventePourRambourser; // ne sera pas à la base de donnée, mas sera donnée par l'entrée de donnée
+	
+	
+	public Vente getVentePourRambourser() {
+		return ventePourRambourser;
+	}
+	public void setVentePourRambourser(Vente ventePourRambourser) {
+		this.ventePourRambourser = ventePourRambourser;
+	}
 	public void sortVente(){
 		Collections.sort(allVentes);
 	}

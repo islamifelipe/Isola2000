@@ -7,6 +7,7 @@ package fr.unice.isa.tcf;
 import fr.unice.isa.tcf.components.CatalogueForfait;
 import fr.unice.isa.tcf.components.Client;
 import fr.unice.isa.tcf.components.Commande;
+import fr.unice.isa.tcf.components.Reboursement;
 import fr.unice.isa.tcf.components.VenteRemboursement;
 
 import fr.unice.isa.tcf.utils.Database;
@@ -26,6 +27,7 @@ public abstract class AbstractTCFTest {
 				.addPackage(Client.class.getPackage())
 				.addPackage(Commande.class.getPackage())
 				.addPackage(VenteRemboursement.class.getPackage())
+				.addPackage(Reboursement.class.getPackage())
 				;
 //				.addPackage(Usager.class.getPackage())
 //				.addPackage(VenteCaisse.class.getPackage())
