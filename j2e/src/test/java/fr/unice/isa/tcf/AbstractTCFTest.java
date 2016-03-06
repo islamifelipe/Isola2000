@@ -30,7 +30,7 @@ public abstract class AbstractTCFTest {
 //				.addPackage(Usager.class.getPackage())
 //				.addPackage(VenteCaisse.class.getPackage())
 //				.addPackage(VenteSite.class.getPackage())
-//				.addPackage(AgenteCaisse.class.getPackage())
+//				.addPackage(AgentCaisse.class.getPackage())
 //				.addPackage(Forfait.class.getPackage())
 //				.addPackage(Vente.class.getPackage())
 //				.addPackage(ICatalogue.class.getPackage())

@@ -7,7 +7,7 @@ package fr.unice.isa.tcf.entities;
  * @author islamefelipefernandes
  *
  */
-public class AgenteCaisse {
+public class AgentCaisse {
 	private String name;
 	private String id;
 	private String telefone;
@@ -29,7 +29,7 @@ public class AgenteCaisse {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public AgenteCaisse(String name, String id, String telefone) {
+	public AgentCaisse(String name, String id, String telefone) {
 		super();
 		this.name = name;
 		this.id = id;

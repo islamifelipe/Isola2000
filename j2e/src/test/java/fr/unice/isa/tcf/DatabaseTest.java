@@ -11,7 +11,7 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import fr.unice.isa.tcf.entities.AgenteCaisse;
+import fr.unice.isa.tcf.entities.AgentCaisse;
 import fr.unice.isa.tcf.entities.Usager;
 import fr.unice.isa.tcf.entities.Vente;
 import fr.unice.isa.tcf.entities.VenteCaisse;

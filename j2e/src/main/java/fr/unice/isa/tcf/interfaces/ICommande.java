@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import javax.ejb.Local;
 
-import fr.unice.isa.tcf.entities.AgenteCaisse;
+import fr.unice.isa.tcf.entities.AgentCaisse;
 import fr.unice.isa.tcf.entities.Usager;
 import fr.unice.isa.tcf.entities.Vente;
 import fr.unice.isa.tcf.entities.forfaits.Forfait;
@@ -15,7 +15,7 @@ import fr.unice.isa.tcf.entities.forfaits.Forfait;
 @Local
 public interface ICommande {
 
-	ArrayList<Vente> validerCommandeCaisse(Usager usager, Forfait forfait, int quantite, AgenteCaisse agent); 
+	ArrayList<Vente> validerCommandeCaisse(Usager usager, Forfait forfait, int quantite, AgentCaisse agent);
 	/*
 	 * pourquoi retourner une lieste de ventes? Parce que un client peut acreter plusieur forfaits 
 	 * (et un forfait d'un type et categorie peut être acheté pour plusieurs clientes)

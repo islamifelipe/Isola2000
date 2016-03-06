@@ -16,7 +16,7 @@ import java.util.GregorianCalendar;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import fr.unice.isa.tcf.entities.AgenteCaisse;
+import fr.unice.isa.tcf.entities.AgentCaisse;
 
 @Stateless(name = "commande")
 public class Commande implements ICommande {
@@ -25,7 +25,7 @@ public class Commande implements ICommande {
 	// avec cette methode, on n'a pas besoin des atributes globales 
 	//d'instace "forfait" "client" et "quantite"
 	@Override
-	public ArrayList<Vente> validerCommandeCaisse(Usager usager, Forfait forfait, int quantite, AgenteCaisse agent) {
+	public ArrayList<Vente> validerCommandeCaisse(Usager usager, Forfait forfait, int quantite, AgentCaisse agent) {
 		/* Les fonctons de validation de commande suppose que l'usager existe (parce que il a fait deja son login
 		 * En plus, quelles sont les conditions pour valider la commande? Est-ce qu'il y a des conditions speciales
 		 * Comment doit être fait le paiement?

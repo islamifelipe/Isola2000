@@ -9,9 +9,9 @@ package fr.unice.isa.tcf.entities;
 import fr.unice.isa.tcf.entities.forfaits.Forfait;
 
 public class VenteCaisse extends Vente{
-	private AgenteCaisse agent;
+	private AgentCaisse agent;
 
-	public VenteCaisse(int id, String date, String heure, double valeur, Usager client, Forfait forfait, AgenteCaisse agent) {
+	public VenteCaisse(int id, String date, String heure, double valeur, Usager client, Forfait forfait, AgentCaisse agent) {
 		super();
 		this.agent = agent;
 		super.id = id;
@@ -22,11 +22,11 @@ public class VenteCaisse extends Vente{
 		super.forfait = forfait;
 	}
 
-	public AgenteCaisse getAgent() {
+	public AgentCaisse getAgent() {
 		return agent;
 	}
 
-	public void setAgent(AgenteCaisse agent) {
+	public void setAgent(AgentCaisse agent) {
 		this.agent = agent;
 	}
 
