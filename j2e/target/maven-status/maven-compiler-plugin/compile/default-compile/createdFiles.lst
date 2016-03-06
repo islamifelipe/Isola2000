@@ -12,7 +12,6 @@ fr/unice/isa/tcf/interfaces/ICatalogueLecture.class
 fr/unice/isa/tcf/entities/forfaits/Forfait.class
 fr/unice/isa/tcf/entities/Usager.class
 fr/unice/isa/tcf/components/Management.class
-fr/unice/isa/tcf/Hello.class
 fr/unice/isa/tcf/components/Commande.class
 fr/unice/isa/tcf/entities/forfaits/Categorie.class
 fr/unice/isa/tcf/components/CatalogueForfait.class
