@@ -46,8 +46,7 @@ public class CatalogueForfait implements ICatalogueLecture, ICatalogueMaJ {
 
 	@Override
 	public void addForfait(Forfait forfait) {
-		Set<Forfait> allForfait  = getAllForfaits();
-		allForfait.add(forfait);
+		getAllForfaits().add(forfait);
 	}
 
 	@Override
