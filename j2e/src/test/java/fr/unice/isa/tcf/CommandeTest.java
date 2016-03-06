@@ -67,12 +67,12 @@ public class CommandeTest extends AbstractTCFTest {
         ArrayList<Vente> myWebCart = commande.validerCommandeSite(usager, forfait, 4);
 
         for (Vente v : myCart) {
-            System.out.println(v.getValeur());
+//            System.out.println(v.getValeur());
 //            Assert.assertEquals(v.getValeur(), 0);
 
         }
         for (Vente v : myWebCart) {
-            System.out.println(v.getValeur());
+//            System.out.println(v.getValeur());
 //            Assert.assertEquals(v.getValeur(), 0);
         }
     }

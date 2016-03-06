@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.unice.isa.tcf.VenteRembTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.422 sec - in fr.unice.isa.tcf.VenteRembTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.849 sec - in fr.unice.isa.tcf.VenteRembTest

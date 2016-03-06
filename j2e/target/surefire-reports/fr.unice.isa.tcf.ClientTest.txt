@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.unice.isa.tcf.ClientTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 72.676 sec <<< FAILURE! - in fr.unice.isa.tcf.ClientTest
-cadastrerTest(fr.unice.isa.tcf.ClientTest)  Time elapsed: 1.64 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at fr.unice.isa.tcf.ClientTest.cadastrerTest(ClientTest.java:43)
-
-autentificationTest(fr.unice.isa.tcf.ClientTest)  Time elapsed: 0.236 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at fr.unice.isa.tcf.ClientTest.autentificationTest(ClientTest.java:31)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.749 sec - in fr.unice.isa.tcf.ClientTest

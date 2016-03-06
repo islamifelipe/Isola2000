@@ -54,10 +54,6 @@ public class Database {
 		return allVentes;
 	}
 
-	public ArrayList<Integer> getArrayInt(){
-		return new ArrayList<Integer>();
-	}
-
 
 	public ArrayList<Usager> getAllUsager() {
 		return allUsager;

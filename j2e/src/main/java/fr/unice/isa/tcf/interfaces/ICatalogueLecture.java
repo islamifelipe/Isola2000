@@ -18,7 +18,7 @@ import fr.unice.isa.tcf.entities.forfaits.Forfait;
  *
  */
 @Local
-public interface ICatalogue {
+public interface ICatalogueLecture {
 
 	Set<Forfait> getAllForfaits();
 	Map<Categorie, Set<Forfait>> getForfaits(); // retourne tous les forfaits
