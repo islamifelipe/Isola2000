@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.unice.isa.tcf.ClientTest" time="1.876" tests="2" errors="2" skipped="0" failures="0">
+<testsuite name="fr.unice.isa.tcf.ClientTest" time="0.497" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.73-b02"/>
-    <property name="gopherProxySet" value="false"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.74-b02"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/islamefelipefernandes/Documents/Material_Academico_Intercambio/Segundo Semestre/Arquitecture de software/Projeto/ad/j2e"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/mitsuko/Documents/ISA/Isola2000/j2e"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,181 +15,50 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/islamefelipefernandes/Documents/Material_Academico_Intercambio/Segundo Semestre/Arquitecture de software/Projeto/ad/j2e"/>
-    <property name="java.runtime.version" value="1.8.0_73-b02"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/"/>
+    <property name="user.dir" value="/home/mitsuko/Documents/ISA/Isola2000/j2e"/>
+    <property name="java.runtime.version" value="1.8.0_74-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/islamefelipefernandes/Documents/Maven/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/islamefelipefernandes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.10.3"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/islamefelipefernandes"/>
+    <property name="os.version" value="3.13.0-74-generic"/>
+    <property name="user.home" value="/home/mitsuko"/>
     <property name="user.timezone" value="Europe/Paris"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="islamefelipefernandes"/>
-    <property name="java.class.path" value="/Users/islamefelipefernandes/Documents/Maven/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="mitsuko"/>
+    <property name="java.class.path" value="/usr/share/maven3/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_73"/>
-    <property name="java.ext.dirs" value="/Users/islamefelipefernandes/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.8.0_74"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/islamefelipefernandes/Documents/Maven/apache-maven-3.3.9"/>
+    <property name="maven.home" value="/usr/share/maven3"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="cadastrerTest" classname="fr.unice.isa.tcf.ClientTest" time="1.64">
-    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at fr.unice.isa.tcf.ClientTest.cadastrerTest(ClientTest.java:43)
-</error>
-    <system-err><![CDATA[mars 05, 2016 4:23:19 PM org.apache.tomee.embedded.Container start
-INFOS: Starting TomEE from: /var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-apache-tomee
-mars 05, 2016 4:23:24 PM org.apache.coyote.AbstractProtocol init
-INFOS: Initializing ProtocolHandler ["http-bio-8080"]
-mars 05, 2016 4:23:25 PM org.apache.catalina.core.StandardService startInternal
-INFOS: Starting service Tomcat
-mars 05, 2016 4:23:25 PM org.apache.catalina.core.StandardEngine startInternal
-INFOS: Starting Servlet Engine: Apache Tomcat/7.0.63
-mars 05, 2016 4:23:25 PM org.apache.coyote.AbstractProtocol start
-INFOS: Starting ProtocolHandler ["http-bio-8080"]
-mars 05, 2016 4:23:30 PM org.apache.openejb.util.OptionsLog info
-INFOS: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: ********************************************************************************
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: OpenEJB http://tomee.apache.org/
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: Startup: Sat Mar 05 16:23:31 CET 2016
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: Copyright 1999-2015 (C) Apache OpenEJB/TomEE Project, All Rights Reserved.
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: Version: 4.7.3
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: Build date: 20151204
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: Build time: 06:14
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: ********************************************************************************
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: openejb.home = /private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-apache-tomee
-mars 05, 2016 4:23:31 PM org.apache.openejb.OpenEJB$Instance <init>
-INFOS: openejb.base = /private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-apache-tomee
-mars 05, 2016 4:23:31 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
-INFOS: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@76a4ebf2
-mars 05, 2016 4:23:31 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
-INFOS: Succeeded in installing singleton service
-mars 05, 2016 4:23:32 PM org.apache.openejb.config.ConfigurationFactory init
-INFOS: openejb configuration file is '/private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-apache-tomee/conf/openejb.xml'
-mars 05, 2016 4:23:33 PM org.apache.openejb.config.ConfigurationFactory configureService
-INFOS: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
-mars 05, 2016 4:23:34 PM org.apache.openejb.config.ConfigurationFactory configureService
-INFOS: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
-mars 05, 2016 4:23:34 PM org.apache.openejb.util.OptionsLog info
-INFOS: Using 'openejb.system.apps=false'
-mars 05, 2016 4:23:34 PM org.apache.openejb.util.OptionsLog info
-INFOS: Using 'openejb.deployments.classpath=false'
-mars 05, 2016 4:23:34 PM org.apache.openejb.assembler.classic.Assembler createRecipe
-INFOS: Creating TransactionManager(id=Default Transaction Manager)
-mars 05, 2016 4:23:34 PM org.apache.openejb.assembler.classic.Assembler createRecipe
-INFOS: Creating SecurityService(id=Tomcat Security Service)
-mars 05, 2016 4:23:35 PM org.apache.openejb.util.OptionsLog info
-INFOS: Using 'openejb.servicemanager.enabled=false'
-mars 05, 2016 4:23:51 PM org.apache.openejb.util.JarExtractor extract
-INFOS: Extracting jar: /var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272.war
-mars 05, 2016 4:23:51 PM org.apache.openejb.util.JarExtractor extract
-INFOS: Extracted path: /var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272
-mars 05, 2016 4:23:51 PM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
-INFOS: using default host: localhost
-mars 05, 2016 4:23:51 PM org.apache.tomee.catalina.TomcatWebAppBuilder init
-INFOS: ------------------------- localhost -> /92a90d9e-5bbf-4cb4-a855-3d4441766272
-mars 05, 2016 4:23:55 PM org.apache.openejb.config.ConfigurationFactory configureApplication
-INFOS: Configuring enterprise application: /private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272
-mars 05, 2016 4:23:59 PM org.apache.openejb.config.InitEjbDeployments deploy
-INFOS: Auto-deploying ejb Database: EjbDeployment(deployment-id=Database)
-mars 05, 2016 4:23:59 PM org.apache.openejb.config.ConfigurationFactory configureService
-INFOS: Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
-mars 05, 2016 4:23:59 PM org.apache.openejb.config.AutoConfig createContainer
-INFOS: Auto-creating a container for bean 92a90d9e-5bbf-4cb4-a855-3d4441766272.Comp308889081: Container(type=MANAGED, id=Default Managed Container)
-mars 05, 2016 4:23:59 PM org.apache.openejb.assembler.classic.Assembler createRecipe
-INFOS: Creating Container(id=Default Managed Container)
-mars 05, 2016 4:23:59 PM org.apache.openejb.core.managed.SimplePassivater init
-INFOS: Using directory /var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T for stateful session passivation
-mars 05, 2016 4:23:59 PM org.apache.openejb.config.ConfigurationFactory configureService
-INFOS: Configuring Service(id=Default Singleton Container, type=Container, provider-id=Default Singleton Container)
-mars 05, 2016 4:23:59 PM org.apache.openejb.config.AutoConfig createContainer
-INFOS: Auto-creating a container for bean Database: Container(type=SINGLETON, id=Default Singleton Container)
-mars 05, 2016 4:23:59 PM org.apache.openejb.assembler.classic.Assembler createRecipe
-INFOS: Creating Container(id=Default Singleton Container)
-mars 05, 2016 4:24:00 PM org.apache.openejb.config.JndiEncInfoBuilder buildEjbRefs
-AVERTISSEMENT: Unresolved ejb reference "java:comp/env/client" in bean "92a90d9e-5bbf-4cb4-a855-3d4441766272.Comp".  Will attempt resolution again at runtime.
-mars 05, 2016 4:24:00 PM org.apache.openejb.config.JndiEncInfoBuilder buildEjbRefs
-AVERTISSEMENT: Unresolved ejb reference "java:comp/env/client" in bean "Database".  Will attempt resolution again at runtime.
-mars 05, 2016 4:24:00 PM org.apache.openejb.config.JndiEncInfoBuilder buildEjbRefs
-AVERTISSEMENT: Unresolved ejb reference "java:comp/env/client" in bean "92a90d9e-5bbf-4cb4-a855-3d4441766272_fr.unice.isa.tcf.ClientTest".  Will attempt resolution again at runtime.
-mars 05, 2016 4:24:00 PM org.apache.openejb.config.JndiEncInfoBuilder buildEjbRefs
-AVERTISSEMENT: Unresolved ejb reference "java:comp/env/client" in bean "/private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272".  Will attempt resolution again at runtime.
-mars 05, 2016 4:24:00 PM org.apache.openejb.config.AppInfoBuilder build
-INFOS: Enterprise application "/private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272" loaded.
-mars 05, 2016 4:24:00 PM org.apache.openejb.assembler.classic.Assembler createApplication
-INFOS: Assembling app: /private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272
-mars 05, 2016 4:24:02 PM org.apache.openejb.assembler.classic.JndiBuilder bind
-INFOS: Jndi(name=DatabaseLocalBean) --> Ejb(deployment-id=Database)
-mars 05, 2016 4:24:02 PM org.apache.openejb.assembler.classic.JndiBuilder bind
-INFOS: Jndi(name=global/92a90d9e-5bbf-4cb4-a855-3d4441766272/Database!fr.unice.isa.tcf.utils.Database) --> Ejb(deployment-id=Database)
-mars 05, 2016 4:24:02 PM org.apache.openejb.assembler.classic.JndiBuilder bind
-INFOS: Jndi(name=global/92a90d9e-5bbf-4cb4-a855-3d4441766272/Database) --> Ejb(deployment-id=Database)
-mars 05, 2016 4:24:02 PM org.apache.openejb.cdi.CdiBuilder initSingleton
-INFOS: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@76a4ebf2
-mars 05, 2016 4:24:04 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
-INFOS: OpenWebBeans Container is starting...
-mars 05, 2016 4:24:05 PM org.apache.webbeans.plugins.PluginLoader startUp
-INFOS: Adding OpenWebBeansPlugin : [CdiPlugin]
-mars 05, 2016 4:24:05 PM org.apache.webbeans.plugins.PluginLoader startUp
-INFOS: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
-mars 05, 2016 4:24:07 PM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
-INFOS: All injection points were validated successfully.
-mars 05, 2016 4:24:07 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
-INFOS: OpenWebBeans Container has started, it took 2556 ms.
-mars 05, 2016 4:24:08 PM org.apache.openejb.assembler.classic.Assembler startEjbs
-INFOS: Created Ejb(deployment-id=Database, ejb-name=Database, container=Default Singleton Container)
-mars 05, 2016 4:24:08 PM org.apache.openejb.assembler.classic.Assembler startEjbs
-INFOS: Started Ejb(deployment-id=Database, ejb-name=Database, container=Default Singleton Container)
-mars 05, 2016 4:24:08 PM org.apache.openejb.assembler.classic.Assembler createApplication
-INFOS: Deployed Application(path=/private/var/folders/s4/8cgfrgxx7qbdlm8nt2llsmkm0000gn/T/arquillian-tomee-app-working-dir/0/92a90d9e-5bbf-4cb4-a855-3d4441766272)
-mars 05, 2016 4:24:12 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
-INFOS: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [414] milliseconds.
-mars 05, 2016 4:24:13 PM org.apache.openejb.InjectionProcessor fillInjectionProperties
-AVERTISSEMENT: Injection data not found in JNDI context: jndiName='comp/env/client', target=fr.unice.isa.tcf.ClientTest/client1
-]]></system-err>
-  </testcase>
-  <testcase name="autentificationTest" classname="fr.unice.isa.tcf.ClientTest" time="0.236">
-    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at fr.unice.isa.tcf.ClientTest.autentificationTest(ClientTest.java:31)
-</error>
-    <system-err><![CDATA[mars 05, 2016 4:24:14 PM org.apache.openejb.InjectionProcessor fillInjectionProperties
-AVERTISSEMENT: Injection data not found in JNDI context: jndiName='comp/env/client', target=fr.unice.isa.tcf.ClientTest/client1
-]]></system-err>
-  </testcase>
+  <testcase name="cadastrerTest" classname="fr.unice.isa.tcf.ClientTest" time="0.497"/>
+  <testcase name="autentificationTest" classname="fr.unice.isa.tcf.ClientTest" time="0"/>
 </testsuite>

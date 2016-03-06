@@ -1,5 +1,6 @@
 fr/unice/isa/tcf/entities/Vente.class
 fr/unice/isa/tcf/entities/VenteCaisse.class
+fr/unice/isa/tcf/interfaces/ICatalogueMaJ.class
 fr/unice/isa/tcf/interfaces/IAutentification.class
 fr/unice/isa/tcf/interfaces/ICommande.class
 fr/unice/isa/tcf/utils/Database.class
@@ -7,12 +8,12 @@ fr/unice/isa/tcf/components/VenteRemboursement.class
 fr/unice/isa/tcf/components/Client.class
 fr/unice/isa/tcf/entities/VenteSite.class
 fr/unice/isa/tcf/interfaces/IRemboursement.class
+fr/unice/isa/tcf/interfaces/ICatalogueLecture.class
 fr/unice/isa/tcf/entities/forfaits/Forfait.class
 fr/unice/isa/tcf/entities/Usager.class
-fr/unice/isa/tcf/interfaces/ICatalogue.class
+fr/unice/isa/tcf/components/Management.class
 fr/unice/isa/tcf/Hello.class
 fr/unice/isa/tcf/components/Commande.class
-fr/unice/isa/tcf/components/CatalogueForfait.class
-fr/unice/isa/tcf/entities/AgenteCaisse.class
 fr/unice/isa/tcf/entities/forfaits/Categorie.class
+fr/unice/isa/tcf/components/CatalogueForfait.class
 fr/unice/isa/tcf/interfaces/IVente.class
