@@ -44,21 +44,21 @@ public class CatalogueForfait implements ICatalogueLecture, ICatalogueMaJ {
 		return  memory.getForfaits().get(categorie).size(); // quantité de forfait d'une categorie, pas d'un type (sous-classe d'heritage)
 	}
 
-	//TODO
 	@Override
-	public void addForfait() {
-
+	public void addForfait(Forfait forfait) {
+		Set<Forfait> allForfait  = getAllForfaits();
+		allForfait.add(forfait);
 	}
 
-	//TODO
 	@Override
-	public void modifyForfaits() {
-
+	public void modifyForfaits(Forfait forfait, double prix, int duree) {
+		forfait.setPrix(prix);
+		forfait.setDuree(duree);
 	}
 
-	//TODO
 	@Override
-	public void deleteForfaits() {
-
+	public void deleteForfaits(Forfait forfait) {
+		Set<Forfait> allForfait  = getAllForfaits();
+		allForfait.remove(forfait);
 	}
 }

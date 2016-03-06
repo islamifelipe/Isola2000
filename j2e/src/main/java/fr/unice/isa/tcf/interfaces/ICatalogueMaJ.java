@@ -19,9 +19,9 @@ import java.util.Set;
 @Local
 public interface ICatalogueMaJ {
 
-	void addForfait();
-	void modifyForfaits();
-	void deleteForfaits();
+	void addForfait(Forfait forfait);
+	void modifyForfaits(Forfait forfait, double prix, int duree);
+	void deleteForfaits(Forfait forfait);
 
 	/*On ajoute plus des methodes au fur et à mesure*/
 	
